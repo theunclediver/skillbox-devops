@@ -1,0 +1,8 @@
+image: docker
+
+services:
+  - docker:dind
+
+build_image:
+  script:
+    - docker build .
