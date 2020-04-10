@@ -2,11 +2,11 @@ FROM node:lts-alpine3.9
 
 RUN mkdir /app
 WORKDIR /app
-COPY ./flatris/package.json /app
+COPY ./src/package.json /app
 
 RUN yarn install
 
-COPY ./flatris /app
+COPY ./src /app
 
 #RUN yarn test
 RUN yarn build
